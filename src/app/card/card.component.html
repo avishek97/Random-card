@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body text-center">
+        <img weight="150" height="150" class="rounded-circle img-thumbnail border-danger"
+         [src]="user.picture?.large" alt="">
+    </div>
+    <div class="card-title text-primary" *ngIf="user; else loadingBlock">
+        <h1>
+            <span class="px-2">{{user.name.title}}</span>
+            <span></span>
+            <span></span>
+
+             <ng-template #loadingBlock> <!-- this is use to load dummy template -->
+                <div class="text-center">
+                    <div class="spinner-border spinny-grow-mg text-white" role="status">
+                        
+                    </div>
+                    <div class="text-white">
+                        loading...
+                    </div>
+                </div>
+            </ng-template>
+        </h1>
+    </div>
+</div>

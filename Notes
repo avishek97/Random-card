@@ -1,0 +1,7 @@
+For http
+1. import httpclientModule and add it to app,module.ts under imports
+2. Import http client inside service.ts
+
+prop drilling
+
+1. use Input from angular core then use it as dependency injection like @Input() propsname;
